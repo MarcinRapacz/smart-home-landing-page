@@ -1,0 +1,148 @@
+@import "variables.scss";
+
+.whatWeDo {
+  position: relative;
+  max-width: $maxWidth;
+  margin: 0 auto;
+
+  &__header {
+    padding: 15px;
+    max-width: 380px;
+    font-family: $ffMontserrat;
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: 0.05em;
+    color: $blue_2;
+
+    @media (min-width: $smallDesktop) {
+      padding: 0;
+      margin: 30px 0 0 30px;
+      font-size: 34px;
+      line-height: 46px;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 15.4%;
+    }
+  }
+
+  &__gridContainer {
+    @media (min-width: $smallDesktop) {
+      margin: 30px 0 0 0;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 190px auto 0;
+      max-width: 860px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 100px 100px;
+      grid-template-areas:
+        ". whatWeDo__card1"
+        "whatWeDo__card2 whatWeDo__card1"
+        "whatWeDo__card2 whatWeDo__card3"
+        ". whatWeDo__card3";
+      transform: translateX(40px);
+    }
+  }
+
+  &__card {
+    position: relative;
+    background: #ffffff;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 235px 48px 48px;
+
+    @media (min-width: $desktop) {
+      height: 525px;
+      max-width: 380px;
+    }
+  }
+
+  &__card1 {
+    grid-area: whatWeDo__card1;
+  }
+
+  &__card2 {
+    grid-area: whatWeDo__card2;
+
+    @media (min-width: $desktop) {
+      transform: translateY(-16px);
+    }
+
+    .whatWeDo__image {
+      top: 48px;
+      left: 42%;
+    }
+  }
+
+  &__card3 {
+    grid-area: whatWeDo__card3;
+
+    .whatWeDo__image {
+      top: 48px;
+      left: 45%;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__title {
+    margin: 0;
+    font-family: $ffMontserrat;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: $blue_1;
+  }
+
+  &__text {
+    margin: 18px 0 0;
+    font-family: $ffMontserrat;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: $blue_1;
+    opacity: 0.6;
+  }
+
+  &__link {
+    margin: 31px 0px 0;
+    display: inline-block;
+    font-family: $ffMontserrat;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: $blue_4;
+    transition: 0.2s;
+
+    &:hover {
+      color: darken($color: $blue_4, $amount: 10%);
+      transform: translateY(-2px);
+
+      .whatWeDo__icon {
+        transform: translate(2px, 2px);
+      }
+    }
+  }
+
+  &__icon {
+    transition: 0.2s;
+    margin: 6px 0 0 24px;
+  }
+}

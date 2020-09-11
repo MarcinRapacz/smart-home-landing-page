@@ -6,7 +6,7 @@
   margin: 0 auto;
   background-image: linear-gradient(
     0deg,
-    #98c3e8 8.84%,
+    $blue_5 8.84%,
     rgba(152, 195, 232, 0) 31.12%
   );
   background-repeat: no-repeat;
@@ -39,7 +39,7 @@
     font-size: 30px;
     line-height: 45px;
     letter-spacing: 0.04em;
-    color: #1f3f68;
+    color: $blue_1;
 
     @media (min-width: $desktop) {
       padding: 0;
@@ -56,7 +56,7 @@
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.05em;
-    color: #1f3f68;
+    color: $blue_1;
     opacity: 0.6;
 
     @media (min-width: $desktop) {
@@ -68,7 +68,7 @@
     margin: 76px 25px 25px;
     padding: 16px 45px;
     display: inline-block;
-    background: #5a98d0;
+    background: $blue_4;
     box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
     border-radius: 10px;
     font-family: $ffMontserrat;
@@ -81,7 +81,7 @@
     transition: 0.2s;
 
     &:hover {
-      background: darken($color: #5a98d0, $amount: 10%);
+      background: darken($color: $blue_4, $amount: 10%);
       transform: translateY(-2px);
     }
 
