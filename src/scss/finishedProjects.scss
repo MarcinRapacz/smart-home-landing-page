@@ -1,0 +1,126 @@
+@import "variables.scss";
+
+.finishedProjects {
+  margin: 190px 0 0 0;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__textContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 940px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__title {
+    padding: 0 16px;
+    font-family: $ffMontserrat;
+    font-size: 31px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #1f3f68;
+
+    @media (min-width: $tablet) {
+      padding: 0;
+      flex-basis: 227px;
+      margin-right: 93px;
+    }
+  }
+
+  &__descriptions {
+    margin: 30px 0 0 0;
+    padding: 0 16px;
+    font-family: $ffMontserrat;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1f3f68;
+    opacity: 0.6;
+
+    @media (min-width: $tablet) {
+      margin: 0;
+      padding: 0;
+      flex-basis: 540px;
+    }
+  }
+
+  &__imagesContainer {
+    max-width: 940px;
+    margin: 32px auto 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas:
+      "finishedProjects__big"
+      "finishedProjects__small--1"
+      " finishedProjects__small--2";
+    gap: 16px;
+
+    @media (min-width: $tablet) {
+      margin: 100px auto 0;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 417px 417px;
+      gap: 96px 96px;
+      grid-template-areas:
+        "finishedProjects__big finishedProjects__big"
+        "finishedProjects__small--1 finishedProjects__small--2";
+    }
+  }
+
+  &__big {
+    padding: 24px 32px;
+    grid-area: finishedProjects__big;
+    background-image: url("../images/finishedProjects_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet) {
+      padding: 48px 65px;
+      text-align: right;
+    }
+  }
+
+  &__small--1 {
+    padding: 24px 32px;
+    grid-area: finishedProjects__small--1;
+    background-image: url("../images/finishedProjects_2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__small--2 {
+    padding: 24px 32px;
+    grid-area: finishedProjects__small--2;
+    background-image: url("../images/finishedProjects_3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__imageTitle {
+    font-family: $ffMontserrat;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: $white;
+  }
+
+  &__imageDescription {
+    font-family: $ffMontserrat;
+    font-size: 16px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: $white;
+    opacity: 0.8;
+  }
+}
