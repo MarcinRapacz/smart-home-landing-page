@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import Banner from "../components/banner"
 import WhatWeDo from "../components/whatWeDo"
 import FinishedProjects from "../components/finishedProjects"
+import OurClients from "../components/ourClients"
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <Banner />
     <WhatWeDo />
     <FinishedProjects />
+    <OurClients />
     {/* <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>

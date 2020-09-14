@@ -1,0 +1,123 @@
+@import "variables.scss";
+
+.ourClients {
+  max-width: $maxWidth;
+  margin: 192px auto 0;
+  padding: 93px 0 125px;
+  background: $blue_4;
+
+  @media (min-width: $smallDesktop) {
+    border-radius: 200px 0px 0px 0px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__headerContainer {
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__header {
+    margin: 0 93px 0 0;
+    padding: 0 15px;
+    font-family: $ffMontserrat;
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: $white;
+
+    @media (min-width: $tablet) {
+      padding: 0;
+      flex-basis: 223px;
+    }
+  }
+
+  &__description {
+    padding: 0 15px;
+    font-family: $ffMontserrat;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: $white;
+    opacity: 0.6;
+
+    @media (min-width: $tablet) {
+      padding: 0;
+      flex-basis: 540px;
+    }
+  }
+
+  &__table {
+    display: grid;
+    grid-template-columns: repeat(1, 235px);
+    grid-template-rows: repeat(8, 128px);
+    justify-content: center;
+    margin: 15px 0 0 0;
+
+    @media (min-width: $tablet) {
+      margin: 115px 0 0 0;
+      grid-template-columns: repeat(2, 235px);
+      grid-template-rows: repeat(4, 128px);
+    }
+
+    @media (min-width: $smallDesktop) {
+      grid-template-columns: repeat(4, 235px);
+      grid-template-rows: repeat(2, 128px);
+    }
+  }
+
+  &__tableItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+    font-family: $ffMontserrat;
+    font-size: 20px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    color: $white;
+
+    border-bottom: 1px solid $white;
+
+    @media (min-width: $tablet) {
+      border-right: 1px solid $white;
+
+      &:nth-child(n + 7) {
+        border-bottom: unset;
+      }
+
+      &:nth-child(even) {
+        border-right: unset;
+      }
+    }
+
+    @media (min-width: $smallDesktop) {
+      &:nth-child(even) {
+        border-right: 1px solid $white;
+      }
+
+      &:nth-child(n + 5) {
+        border-bottom: unset;
+      }
+
+      &:nth-child(4n + 0) {
+        border-right: unset;
+      }
+    }
+
+    &--more {
+      background: rgba($color: $blue_1, $alpha: 0.2);
+      text-transform: capitalize;
+    }
+  }
+}
