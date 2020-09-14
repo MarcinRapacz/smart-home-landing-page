@@ -7,20 +7,15 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import Footer from "../components/footer"
 
 import "../scss/layout.scss"
 
 const Layout = ({ children }) => {
   return (
     <>
-      <div>
-        <main>{children}</main>
-        {/* <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer> */}
-      </div>
+      <main>{children}</main>
+      <Footer />
     </>
   )
 }

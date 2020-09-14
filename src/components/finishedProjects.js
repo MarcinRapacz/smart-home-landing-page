@@ -12,8 +12,8 @@ export default function finishedProjects() {
           minim veniam.
         </p>
       </div>
-      <div class="finishedProjects__imagesContainer">
-        <div class="finishedProjects__big">
+      <div className="finishedProjects__imagesContainer">
+        <div className="finishedProjects__big">
           <h5 className="finishedProjects__imageTitle">
             Smart Home Installation
           </h5>
@@ -21,11 +21,11 @@ export default function finishedProjects() {
             In Muarakana Housing Estate
           </p>
         </div>
-        <div class="finishedProjects__small--1">
+        <div className="finishedProjects__small--1">
           <h5 className="finishedProjects__imageTitle">Sparklite App</h5>
           <p className="finishedProjects__imageDescription">Marketplace</p>
         </div>
-        <div class="finishedProjects__small--2">
+        <div className="finishedProjects__small--2">
           <h5 className="finishedProjects__imageTitle">Car-Rapetition App</h5>
           <p className="finishedProjects__imageDescription">Board</p>
         </div>
