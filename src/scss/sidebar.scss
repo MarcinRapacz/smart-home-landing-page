@@ -1,0 +1,98 @@
+@import "variables.scss";
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  height: 100vh;
+  width: 300px;
+  max-width: 100%;
+  background: rgba($color: $blue_4, $alpha: 0.9);
+  background: linear-gradient(
+    170deg,
+    rgba($blue_4, 0.9) 70%,
+    rgba($blue_1, 0.9) 100%
+  );
+  transition: 0.2s;
+  z-index: 100;
+
+  &--show {
+    transform: translateX(-300px);
+  }
+
+  &__logoContainer {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  &__logo {
+    margin: 0;
+  }
+
+  &__logoText {
+    margin-left: 16px;
+    font-family: $ffMontserrat;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    color: $white;
+  }
+
+  &__list {
+    flex-grow: 1;
+    margin: 20px 0 0;
+    list-style: none;
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 20px;
+    font-family: $ffMontserrat;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: rgba($white, 0.8);
+
+    &:hover {
+      color: rgba($white, 1);
+    }
+  }
+
+  &__close {
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-family: $ffMontserrat;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: rgba($white, 0.8);
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      color: rgba($white, 1);
+    }
+  }
+
+  &__social {
+    margin: 0 50px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__socialLink {
+    font-size: 28px;
+    color: rgba($color: $blue_5, $alpha: 0.9);
+  }
+}
