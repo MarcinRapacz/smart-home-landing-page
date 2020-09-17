@@ -3,11 +3,11 @@ import { Link } from "gatsby"
 import Logo from "../images/footerLogo.png"
 import "../scss/footer.scss"
 
-export default function footer() {
+export default function footer({ blueVarsion }) {
   const year = new Date().getFullYear()
 
   return (
-    <footer className={`footer footer--blue`}>
+    <footer className={`footer ${blueVarsion ? "footer--blue" : ""}`}>
       <div className="footer__row footer__row--round">
         <div className="footer__textContent">
           <h4 className="footer__title">Intersted to work with our team?</h4>

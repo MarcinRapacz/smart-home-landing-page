@@ -10,7 +10,7 @@ import FinishedProjects from "../components/finishedProjects"
 import OurClients from "../components/ourClients"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout blueVarsion={true}>
     <SEO title="Home" />
     <Banner />
     <WhatWeDo />

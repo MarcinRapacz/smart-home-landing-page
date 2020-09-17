@@ -8,13 +8,20 @@
   height: 60px;
   width: 100%;
 
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
   @media (min-width: $desktop) {
     height: 95px;
   }
 
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  &--static {
+    position: static;
+    height: 129px;
+    align-items: center;
+    background: $white;
+  }
 
   &__image {
     margin: 0;

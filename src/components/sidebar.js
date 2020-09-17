@@ -37,7 +37,7 @@ export default function sidebar({ menuVisible, handleClick }) {
         </li>
         <li className="sidebar__item">
           <Link
-            to="/contact-us"
+            to="/contact"
             className="sidebar__link"
             onClick={handleClick.bind(null, false)}
           >

@@ -20,7 +20,6 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
-  background-color: #e5e5e5;
 }
 article,
 aside,
@@ -597,4 +596,8 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.bg-blue {
+  background-color: #e5e5e5;
 }

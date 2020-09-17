@@ -14,19 +14,19 @@ import Navbar from "../components/navbar"
 
 import "../scss/layout.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, staticMode, blueVarsion }) => {
   const [showMenu, setShowMenu] = React.useState(false)
 
   const handleShowMenu = state => setShowMenu(state)
 
   return (
-    <>
-      <Navbar handleClick={handleShowMenu} />
+    <div className={`${blueVarsion ? "bg-blue" : ""}`}>
+      <Navbar staticMode={staticMode} handleClick={handleShowMenu} />
       <Backdrop menuVisible={showMenu} handleClick={handleShowMenu} />
       <Sidebar menuVisible={showMenu} handleClick={handleShowMenu} />
       <main>{children}</main>
-      <Footer />
-    </>
+      <Footer blueVarsion={blueVarsion} />
+    </div>
   )
 }
 
