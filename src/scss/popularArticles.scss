@@ -1,0 +1,47 @@
+@import "variables.scss";
+
+.popularArticles {
+  margin: 54px 0 0 0;
+  text-align: right;
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__title {
+    text-align: left;
+    margin: 0 0 32px 0;
+    font-family: $ffMontserrat;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    color: $blue_3;
+    opacity: 0.8;
+  }
+
+  &__container {
+    margin: 34px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width: $smallDesktop) {
+      flex-direction: row;
+    }
+  }
+
+  &__all {
+    display: inline-block;
+    margin: 52px 0 0 0;
+    font-family: $ffMontserrat;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $blue_3;
+  }
+}

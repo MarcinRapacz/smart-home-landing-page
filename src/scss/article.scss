@@ -1,0 +1,136 @@
+@import "variables.scss";
+
+.article {
+  display: flex;
+
+  &--big {
+    margin: 0 !important;
+
+    .article__textContent {
+      @media (min-width: $smallDesktop) {
+        margin: 0 20px 0 0;
+      }
+    }
+
+    .article__description {
+      margin: 34px 0 0 0 !important;
+    }
+
+    .article__details {
+      margin: 50px 0 0 0 !important;
+    }
+  }
+
+  &--row {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 32px 0 !important;
+
+    @media (min-width: $smallDesktop) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .article__textContent {
+      @media (min-width: $smallDesktop) {
+        margin: 0 0 0 20px;
+      }
+    }
+  }
+
+  &--column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+
+    .article__textContent {
+      margin: 14px 0 0 0;
+    }
+
+    .article__description {
+      margin: 18px 0 0 0 !important;
+    }
+
+    .article__details {
+      margin: 16px 0 0 0 !important;
+    }
+  }
+
+  &__textContent {
+    text-align: left;
+    padding: 0 15px !important;
+
+    @media (min-width: $smallDesktop) {
+      padding: 0 !important;
+    }
+  }
+
+  &__title {
+    font-family: $ffRobotoSlab;
+    font-size: 22px;
+    line-height: 38px;
+    letter-spacing: 0.04em;
+    color: $blue_1;
+
+    &--big {
+      font-size: 37px;
+      line-height: 58px;
+    }
+  }
+
+  &__description {
+    margin: 16px 0 0 0 !important;
+    font-family: $ffMontserrat;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: $black;
+    opacity: 0.6;
+  }
+
+  &__details {
+    margin: 15px 0 0 0 !important;
+    display: flex;
+    align-items: center;
+  }
+
+  &__detailsText {
+    margin: 0 80px 0 0 !important;
+  }
+
+  &__author {
+    font-family: $ffMontserrat;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: $blue_1;
+  }
+
+  &__date {
+    margin: 5px 0 0 0 !important;
+    font-family: $ffMontserrat;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: $blue_1;
+    opacity: 0.4;
+  }
+
+  &__icons {
+    margin: 7px 0 0 0 !important;
+  }
+
+  &__icon {
+    &:first-child {
+      margin: 0 38px 0 0;
+    }
+  }
+
+  &__image {
+    &--big {
+      @media (min-width: $smallDesktop) {
+        order: 2;
+      }
+    }
+  }
+}

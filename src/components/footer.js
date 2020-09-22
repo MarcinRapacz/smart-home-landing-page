@@ -75,12 +75,18 @@ export default function footer({ blueVarsion }) {
               </a>
             </li>
             <li className="footer__item footer__item--smallBreak">
-              <a href="/#" className="footer__link">
+              <a
+                href="https://www.facebook.com/marcin.rapacz.5"
+                className="footer__link"
+              >
                 Facebook
               </a>
             </li>
             <li className="footer__item footer__item--smallBreak">
-              <a href="/#" className="footer__link">
+              <a
+                href="https://www.linkedin.com/in/marcin-rapacz"
+                className="footer__link"
+              >
                 LinkedIn
               </a>
             </li>

@@ -16,7 +16,7 @@ export default function sidebar({ menuVisible, handleClick }) {
     <section className={`sidebar ${menuVisible ? "sidebar--show" : ""}`}>
       <div className="sidebar__logoContainer">
         <img src={logo} alt="Logo" className="sidebar__logo" />
-        <span class="sidebar__logoText">Afrianska</span>
+        <span className="sidebar__logoText">Afrianska</span>
 
         <button
           className="sidebar__close"
@@ -44,6 +44,16 @@ export default function sidebar({ menuVisible, handleClick }) {
             Contact us
           </Link>
         </li>
+        <li className="sidebar__item">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.uistore.design/items/smart-home-landing-page-for-figma/"
+            className="sidebar__link"
+          >
+            Inspiration
+          </a>
+        </li>
       </ul>
 
       <ul className="sidebar__social">
@@ -53,12 +63,18 @@ export default function sidebar({ menuVisible, handleClick }) {
           </a>
         </li>
         <li className="sidebar__socialItem">
-          <a href="/#" className="sidebar__socialLink">
+          <a
+            href="https://www.facebook.com/marcin.rapacz.5"
+            className="sidebar__socialLink"
+          >
             <FontAwesomeIcon icon={faFacebook} />
           </a>
         </li>
         <li className="sidebar__socialItem">
-          <a href="/#" className="sidebar__socialLink">
+          <a
+            href="https://www.linkedin.com/in/marcin-rapacz"
+            className="sidebar__socialLink"
+          >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>

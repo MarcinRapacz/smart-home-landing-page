@@ -31,7 +31,7 @@ const Layout = ({ children, staticMode, blueVarsion }) => {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.array.isRequired,
 }
 
 export default Layout
