@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import "../scss/banner.scss"
 
 export default function Banner() {
@@ -11,9 +12,9 @@ export default function Banner() {
           tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin
           odio tellus elit.
         </p>
-        <a href="/#" className="banner__link">
+        <Link to="/#finishedProjects" className="banner__link">
           See Our Project
-        </a>
+        </Link>
       </div>
     </div>
   )

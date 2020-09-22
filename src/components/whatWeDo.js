@@ -7,7 +7,7 @@ import "../scss/whatWeDo.scss"
 
 export default function whatWeDo() {
   return (
-    <section className={`whatWeDo`}>
+    <section className={`whatWeDo`} id="whatWeDo">
       <h4 className={`whatWeDo__header`}>
         What we do to help our client grow in digital era,
       </h4>

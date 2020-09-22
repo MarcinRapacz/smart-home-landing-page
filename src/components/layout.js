@@ -19,6 +19,11 @@ const Layout = ({ children, staticMode, blueVarsion }) => {
 
   const handleShowMenu = state => setShowMenu(state)
 
+  if (typeof window !== "undefined") {
+    // eslint-disable-next-line global-require
+    require("smooth-scroll")('a[href*="#"]')
+  }
+
   return (
     <div className={`${blueVarsion ? "bg-blue" : ""}`}>
       <Navbar staticMode={staticMode} handleClick={handleShowMenu} />

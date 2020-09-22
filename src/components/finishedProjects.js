@@ -3,7 +3,7 @@ import "../scss/finishedProjects.scss"
 
 export default function finishedProjects() {
   return (
-    <section className={`finishedProjects`}>
+    <section className={`finishedProjects`} id="finishedProjects">
       <div className="finishedProjects__textContainer">
         <h4 className="finishedProjects__title">Our Finished Project</h4>
         <p className="finishedProjects__descriptions">

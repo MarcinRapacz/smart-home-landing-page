@@ -50,14 +50,14 @@ export default function footer({ blueVarsion }) {
               </a>
             </li>
             <li className="footer__item footer__item--smallBreak">
-              <a href="/#" className="footer__link">
+              <Link to="/#whatWeDo" className="footer__link">
                 What We Do
-              </a>
+              </Link>
             </li>
             <li className="footer__item footer__item--smallBreak">
-              <a href="/#" className="footer__link">
+              <Link to="/#finishedProjects" className="footer__link">
                 Project
-              </a>
+              </Link>
             </li>
             <li className="footer__item footer__item--smallBreak">
               <a href="/#" className="footer__link">
@@ -70,7 +70,7 @@ export default function footer({ blueVarsion }) {
           <h6 className="footer__subTitle">Follow US</h6>
           <ul className="footer__list">
             <li className="footer__item footer__item--smallBreak">
-              <a href="/#" className="footer__link">
+              <a href="https://www.instagram.com/" className="footer__link">
                 Instagram
               </a>
             </li>
@@ -91,7 +91,7 @@ export default function footer({ blueVarsion }) {
               </a>
             </li>
             <li className="footer__item footer__item--smallBreak">
-              <a href="/#" className="footer__link">
+              <a href="https://www.youtube.com/" className="footer__link">
                 Youtube
               </a>
             </li>

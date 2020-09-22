@@ -6,13 +6,11 @@ import rightArrow from "../icons/rightArrow.svg"
 import "../scss/articleList.scss"
 
 export default function articleList({ articles }) {
-  console.log(articles)
-
   return (
     <section className="articleList">
       <h5 className="articleList__title">ALL ARTICLE</h5>
       {articles.map(article => (
-        <Article orientation="row" {...article} />
+        <Article key={article.title} orientation="row" {...article} />
       ))}
 
       <div className="articleList__pagination">
